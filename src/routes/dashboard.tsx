@@ -168,6 +168,7 @@ function Dashboard() {
                   stroke="oklch(0.7 0.148 162.5)"
                   strokeWidth={2}
                   dot={false}
+                  isAnimationActive={false}
                 />
                 <Line
                   type="monotone"
@@ -175,6 +176,7 @@ function Dashboard() {
                   stroke="#3b82f6"
                   strokeWidth={2}
                   dot={false}
+                  isAnimationActive={false}
                 />
               </LineChart>
             </ResponsiveContainer>
@@ -189,6 +191,9 @@ function Dashboard() {
                 <Pie
                   data={[{ name: "Vendido", value: 2 }]}
                   dataKey="value"
+                  cx="50%"
+                  cy="50%"
+                  isAnimationActive={false}
                   innerRadius={58}
                   outerRadius={82}
                   stroke="var(--color-card)"
